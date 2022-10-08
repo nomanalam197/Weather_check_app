@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <style>
+        *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html,body{
+      height: 100%;
+      width: 100%;
+    }
+    #main{
+      color: white;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      background-image: url(https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VhdGhlciUyMGhkJTIwaW1hZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+      background-position: center;
+      background-size: cover;
+    }
+    #card{
+      background-color: #cd7116ad;
+      height: 60vh;
+      width: 25vw;
+      position: fixed;
+      z-index: 9;
+      border: 0.5vw solid #CD7016;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    #circle{
+      height: 20vh;
+      width: 10vw;
+      background-color: rgba(135, 207, 235, 0.849);
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 5vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-self: center;
+    }
+    #circle img{
+      object-fit: cover;
+    }
+    h1{
+      margin-top: 4vh;
+    }
+    h2{
+      margin-top: 5vh;
+    }
+    h3{
+      margin-top: 6vh;
+    }
+    span{
+      opacity: 0.8;
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="card">
+          <div id="circle">
+            <img src=<%=imageurl%>>
+          </div>
+          <h1><%=place%></h1>
+          <h2>Temperature: <span><%=temp%></span></h2>
+          <h3>Description: <span><%=description%></span></h3>
+        </div>
+    </div>
+</body>
+</html>
