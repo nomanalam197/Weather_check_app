@@ -1,0 +1,35 @@
+::-webkit-scrollbar{
+    display: none;
+}
+:root{
+    --text-color: #201d1dd7;
+    --placeholder-color: #757575;
+}
+@font-face {
+    font-family: font1;
+    src: url(./fonts/1cXxaUPXBpj2rGoU7C9WiHGF.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(./fonts/RWmMoKWR9v4ksMfaWd_JN9XFiaQ.ttf);
+}
+@font-face {
+    font-family: gilroy;
+    src: url(./fonts/Gilroy-Regular.otf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: gilroy;
+    src: url(./fonts/Gilroy-Bold.otf);
+    font-weight: 600;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}

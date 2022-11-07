@@ -1,0 +1,279 @@
+#main{
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    /* background-color: blue; */
+    background-image: linear-gradient(45deg, #13D3F7,#33e0ff, #b4f6fb);
+    font-family: gilroy;
+}
+#search{
+    height: 8vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 1vw .3vw 0;
+}
+input{
+    height: 6vh;
+    width: 23vw;
+    font-size: 1vw;
+    padding: 0 1vw;
+    border: .15vw solid #000;
+    color: var(--placeholder-color);
+    font-weight: 600;
+    background-color: transparent;
+}
+#circle{
+    height: 20vh;
+    width: 10vw;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 5vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  #circle img{
+    object-fit: cover;
+  }
+#fewDets{
+    height: 82vh;
+    width: 100vw;
+    /* background-color: rgb(168, 168, 255); */
+    display: flex;
+}
+#fewDets #cityName{
+    height: 100%;
+    width: 50%;
+    /* background-color: beige; */
+    /* padding: 3vw 2vw; */
+    padding: 5vw 6vw 0 5vw;
+}
+#fewDets #cityName h1{
+    font-family: font2;
+    font-size: 8vw;
+    font-weight: 300;
+}
+#fewDets #cityName h5{
+    font-size: 2vw;
+}
+#fewDets #temperature{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(141, 141, 56); */
+    padding: 7vw 6vw 0 0;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+#fewDets #temperature #center{
+    width: fit-content;
+    /* background-color: red; */
+}
+#fewDets #temperature h1{
+    font-size: 7vw;
+    font-weight: 300;
+}
+#fewDets #temperature h5{
+    font-size: 1.5vw;
+    z-index: 15;
+}
+nav{
+    height: 10vh;
+    width: 100vw;
+    /* background-color: thistle; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5vw;
+}
+nav h2{
+    font-size: 1.3vw;
+    color: var(--text-color);
+    z-index: 9;
+}
+nav img{
+    z-index: 9;
+}
+#statistcs{
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    background-color: #fff;
+}
+#statsBox{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    height: 60%;
+    width: 100%;
+    /* background-color: rgba(255, 0, 0, 0.486); */
+    padding: 2vw;
+    margin-top: 3vw;
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+.stats{
+    height: 14vh;
+    width: 17.5vw;
+    /* background-color: #fff; */
+}
+.fieldName{
+    height: 50%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: font1;
+    font-size: 1.2vw;
+    border: .2vw solid #000;
+    backdrop-filter: blur(2px);
+}
+.fieldData{
+    height: 50%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60vh;
+    /* background-color: red; */
+    display: flex;
+}
+#footer .trees{
+    position: relative;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#footer .trees .treeImg{
+    position: absolute;
+    bottom: 0vw;
+    left: 50%;
+    transform: translate(-50%,0);
+    height: 90%;
+}
+
+@media (max-width: 500px){
+    #main{
+        background-image: linear-gradient(45deg, #13D3F7,#33e0ff, #b4f6fb);
+        font-family: gilroy;
+    }
+    #search{
+        height: 10vh;
+        /* background-color: red; */
+        justify-content: center;
+        padding: 0vw;
+    }
+    input{
+        width: 80vw;
+        font-size: 2.5vw;
+        padding: 0 3vw;
+        border: .35vw solid #000;
+    }
+    #fewDets{
+        height: 82vh;
+        /* background-color: rgb(168, 168, 255); */
+        flex-direction: column;
+    }
+    #fewDets #cityName{
+        height: 50%;
+        width: 100%;
+        /* background-color: beige; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 5vh;
+    }
+    #fewDets #cityName h1{
+        font-size: 17vw;
+    }
+    #fewDets #cityName h5{
+        font-size: 4vw;
+    }
+    #fewDets #temperature{
+        height: 50%;
+        width: 100%;
+        /* background-color: rgb(141, 141, 56); */
+        padding-left: 5vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    #fewDets #temperature #center{
+        width: fit-content;
+        /* background-color: red; */
+    }
+    #fewDets #temperature h1{
+        font-size: 12vw;
+    }
+    #fewDets #temperature h5{
+        font-size: 4vw;
+    }
+    nav{
+        height: 8vh;
+        width: 100vw;
+        /* background-color: thistle; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5vw;
+    }
+    nav h2{
+        font-size: 5vw;
+    }
+    #statistcs{
+        position: relative;
+        height: 100vh;
+    }
+    #statsBox{
+        min-height: 100%;
+        /* background-color: rgba(255, 0, 0, 0.486);  */
+        padding: 0vw;
+        margin-top: 0vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1vw;
+        flex-wrap: nowrap;
+    }
+    .stats{
+        height: 9vh;
+        width: 80vw;
+        /* background-color: #fff; */
+    }
+    .fieldName{
+        /* background-color: red; */
+        font-size: 3vw;
+        border: .4vw solid #000;
+    }
+    .fieldData{
+        background-color: #fff;
+        font-size: 3vw;
+    }
+    #footer{
+        height: 20vh;
+        /* background-color: red; */
+    }
+    #circle{
+        width: 45vw;
+      }
+}

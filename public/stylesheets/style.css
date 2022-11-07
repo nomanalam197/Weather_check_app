@@ -1,8 +1,158 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    font-family: "gilroy";
+    color: var(--text-color);
+}
+#search{
+    height: 13vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: .3vw;
+}
+#searchBar{
+    height: 7vh;
+    width: 60vw;
+    background-color: rgb(255, 255, 255);
+    border: .15vw solid #000;
+    border-radius: .5vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+#searchInput{
+    height: 7vh;
+    width: 78%;
+    /* width: 46vw; */
+    font-size: 1vw;
+    padding: 0 1vw;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    font-weight: 600;
+    background-color: transparent;
+}
+#selection{
+    height: 100%;
+    width: 9%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+#submit{
+    height: 100%;
+    width: 12%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+#mainBody{
+    height: 86%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+}
+#mainBody #tagline{
+    height: 100%;
+    width: 60%;
+    /* background-color: gray; */
+    padding: 5vw;
+}
+#mainBody #tagline h1{
+    font-family: font1;
+    font-size: 4.1vw;
+    letter-spacing: .2vw;
+    font-weight: 500;
+}
+#mainBody #tagline h5{
+    padding-top: 1vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+#mainBody video{
+    height: 100%;
+    width: 40%;
+    z-index: 9999;
+    object-fit: cover;
+    object-position: bottom;
+    /* background-color: rgb(203, 36, 36); */
+    /* background-image: url("storm-concept-illustration_114360-6585.jpg"); */
+    /* background-size: cover;
+    background-position: center; */
 }
 
-a {
-  color: #00B7FF;
+@media (max-width: 500px) {
+    #search{
+        height: 10vh;
+        /* background-color: red; */
+        padding-bottom: 1vw;
+    }
+    #searchBar{
+        height: 6vh;
+        width: 80vw;
+        border: .4vw solid #000;
+        border-radius: 1.5vw;
+        /* background-color: blue; */
+    }
+    #searchInput{
+        /* display: none; */
+        height: 6vh;
+        width: 51%;
+        padding: 0 2vw;
+        font-size: 2.5vw;
+        /* background-color: blanchedalmond; */
+    }
+    #selection{
+        font-family: "gilroy";
+        /* display: none; */
+        height: 100%;
+        width: 26%;
+        background-color: transparent;
+    }
+    #submit{
+        /* display: none; */
+        height: 100%;
+        width: 20%;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-family: "gilroy";
+    }
+    #mainBody{
+        height: 90%;
+        /* background-color: blue; */
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #mainBody #tagline{
+        height: 40%;
+        width: 100%;
+        /* background-color: gray; */
+        padding-top: 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mainBody #tagline h1{
+        font-family: font1;
+        font-size: 8vw;
+        letter-spacing: .4vw;
+        text-align: center;
+    }
+    #mainBody #tagline h5{
+        padding-top: 3vw;
+        font-size: 4vw;
+        font-weight: 500;
+    }
+    #mainBody video{
+        /* height: 60%; */
+        width: 90%;
+        /* background-color: rgb(203, 36, 36); */
+    }
 }
