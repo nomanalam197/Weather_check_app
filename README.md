@@ -1,7 +1,7 @@
 # Weather_check_app
 
 --From Cyclic
-nomanalam197/express-hello-world
+https://wicked-blazer-clam.cyclic.app
 
 
 --From Heroku
